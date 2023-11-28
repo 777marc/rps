@@ -1,3 +1,6 @@
+import sys
+import random
+
 print()
 playerchoice = input("Enter... \n1 for Rock, \n2 for Paper, \n3 for Scissors:\n\n")
 
@@ -10,5 +13,11 @@ if int(playerchoice) == 1:
 if int(playerchoice) == 2:
     print('you selected Paper')
 
-if int(playerchoice) == 1:
+if int(playerchoice) == 3:
     print('you selected Scissor')
+
+computerchoice = random.choice('123')
+
+print(computerchoice)
+
+sys.exit('game complete')
